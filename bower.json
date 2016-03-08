@@ -1,0 +1,24 @@
+{
+  "name": "DBFactory",
+  "authors": [
+    "laughing-zhu <513928731@qq.com>"
+  ],
+  "description": "简易的管理前端ajax请求的工厂",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "dbfactory"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.1"
+  }
+}

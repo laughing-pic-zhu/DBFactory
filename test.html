@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="db.js"></script>
+<script src="config.js"></script>
+<script>
+    $(document).ready(
+            function () {
+                var db = window.db;
+
+                var data = {aaa: 1, bbb: 2};
+
+                db.testA.get(data).done(function (json) {
+                    console.log(json)
+                });
+
+                db.testB.get({}).done(function (json) {
+                    console.log(json)
+                });
+            }
+    )
+</script>
+</html>
