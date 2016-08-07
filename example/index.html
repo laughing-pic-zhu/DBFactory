@@ -5,7 +5,6 @@
     <title>Document</title>
 </head>
 <body>
-
 </body>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="dbFactory.js"></script>
@@ -14,7 +13,7 @@
     $(document).ready(
             function () {
                 var DB = window.DB;
-                var promise1 = $.when(DB.Test.get());
+                var promise1 = $.when(DB.Test.get({test: true}));
                 var promise2 = $.when(DB.GetPersonInfo.get());
                 promise1.then(
                         function (res) {
@@ -29,7 +28,6 @@
                         }, function (error) {
                             console.log(error);
                         });
-
             }
     )
 </script>

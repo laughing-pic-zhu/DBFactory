@@ -124,7 +124,6 @@
 
             $.ajax(ajaxOptions);
         }
-
         return defer.promise();
     };
 

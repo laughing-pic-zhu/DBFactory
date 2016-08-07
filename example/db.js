@@ -21,7 +21,7 @@ var isOnline = false;
         get: {
             type: 'GET',
             // jsonp: true,
-            url: 'dbTest/example/ajax-data/data.json'
+            url: 'example/ajax-data/data.json'
             // mockUrl: urlPrefixForLocal + '/ajax-data/data.json',
             //once: true
         }
