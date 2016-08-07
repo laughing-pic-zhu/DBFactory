@@ -1,4 +1,4 @@
 node_modules
 screen
 *.gitigore
-bower_components
+bower_components/*
