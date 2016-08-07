@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="dbFactory.js"></script>
+<script src="db.js"></script>
+<script>
+    $(document).ready(
+            function () {
+                var DB = window.DB;
+                var promise1 = $.when(DB.Test.get());
+                var promise2 = $.when(DB.GetPersonInfo.get());
+                promise1.then(
+                        function (res) {
+                            console.log(res)
+                        }, function (error) {
+                            console.log(error);
+                        });
+
+                promise2.then(
+                        function (res) {
+                            console.log(res)
+                        }, function (error) {
+                            console.log(error);
+                        });
+
+            }
+    )
+</script>
+</html>
