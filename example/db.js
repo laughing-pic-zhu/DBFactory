@@ -35,6 +35,5 @@ var isOnline = false;
         }
     });
 
-
     window.DB = DBF.context;
 })(window.DBFactory);

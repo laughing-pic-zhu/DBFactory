@@ -5,8 +5,10 @@
     <title>Document</title>
 </head>
 <body>
+<div id="promise1"></div>
+<div id="promise2"></div>
 </body>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="dbFactory.js"></script>
 <script src="db.js"></script>
 <script>
@@ -18,6 +20,7 @@
                 promise1.then(
                         function (res) {
                             console.log(res)
+                            $('#promise1').html('promise1:'+res.data);
                         }, function (error) {
                             console.log(error);
                         });
@@ -26,7 +29,7 @@
                         function (res) {
                             console.log(res)
                         }, function (error) {
-                            console.log(error);
+                            $('#promise2').html('promise2:'+error.msg.responseText);
                         });
             }
     )
